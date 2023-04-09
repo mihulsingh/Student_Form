@@ -41,7 +41,7 @@ pipeline {
       stage('Deploying Rancher as with load balancer') {
          steps {
             script{
-               sh 'kubectl set image deployment/load-testing-lb container-1=mihulsingh/assignmenttwo:1.0'
+               sh 'kubectl set image deployment/load-testing container-1=mihulsingh/assignmenttwo:1.0'
             }
          }
       }
