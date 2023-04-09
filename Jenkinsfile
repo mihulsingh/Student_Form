@@ -1,7 +1,7 @@
 pipeline {
    environment {
         registry = "mihulsingh/assignmenttwo"
-        registryCredential = 'DDocker'
+        registryCredential = 'Docker'
     }
    agent any
 
