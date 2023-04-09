@@ -33,7 +33,7 @@ pipeline {
       stage('Deploying Rancher to single pod') {
          steps {
             script{
-               sh 'kubectl set image deployment/deploymentone container-0=mihulsingh/assignmenttwo:1.0'
+               sh 'kubectl set image deployment/new-test container-0=mihulsingh/assignmenttwo:1.0'
             }
          }
       }
