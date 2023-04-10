@@ -34,7 +34,7 @@ pipeline {
       stage('Deploying Rancher to single pod') {
          steps {
             script{
-               sh "kubectl set image deployment/ultimate-test container-1=mihulsingh/assignmenttwo:${env.TIMESTAMP}"
+               sh "kubectl set image deployment/ultimate-test container-0=mihulsingh/assignmenttwo:${env.TIMESTAMP}"
             }
          }
       }
@@ -42,7 +42,7 @@ pipeline {
       stage('Deploying Rancher as with load balancer') {
          steps {
             script{
-               sh "kubectl set image deployment/ultimate-test container-1=mihulsingh/assignmenttwo:${env.TIMESTAMP}"
+               sh "kubectl set image deployment/ultimate-test container-0=mihulsingh/assignmenttwo:${env.TIMESTAMP}"
             }
          }
       }
